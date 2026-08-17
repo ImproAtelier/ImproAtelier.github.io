@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Das ImproAtelier ist ein Improvisationstheater-Ensemble aus Mainz. Theater ohne Skript – jeden Abend ein Original.">
+  <meta name="theme-color" content="#17130D">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="ImproAtelier – Improvisationstheater aus Mainz">
+  <meta property="og:description" content="Kein Plan. Volle Absicht. Theater ohne Skript – jeden Abend ein Original.">
+  <title>ImproAtelier – Improvisationstheater aus Mainz</title>
+  <style>
+    @font-face {
+      font-family: "Archivo";
+      src: url("assets/fonts/archivo-latin-wght-normal.woff2") format("woff2-variations");
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Space Grotesk";
+      src: url("assets/fonts/space-grotesk-latin-wght-normal.woff2") format("woff2-variations");
+      font-style: normal;
+      font-weight: 300 700;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Instrument Serif";
+      src: url("assets/fonts/instrument-serif-latin-400-normal.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Instrument Serif";
+      src: url("assets/fonts/instrument-serif-latin-400-italic.woff2") format("woff2");
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Space Mono";
+      src: url("assets/fonts/space-mono-latin-400-normal.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Space Mono";
+      src: url("assets/fonts/space-mono-latin-700-normal.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+    body { margin: 0; background: #FAF7F2; }
+    a { color: #C56A0A; text-decoration: none; }
+    a:hover { color: #E8871E; }
+    img { display: block; max-width: 100%; }
+    .nav-link:hover { color: #E8871E !important; }
+    .ticket-link:hover,
+    .contact-link:hover { background: #FAF7F2 !important; }
+    .contact-link:hover { transform: translateY(-2px); }
+    .footer-link:hover { color: #E8871E !important; }
+    a:focus-visible {
+      outline: 3px solid #FAF7F2;
+      outline-offset: 4px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="top" style="background:#FAF7F2; color:#17130D; font-family:'Space Grotesk',system-ui,sans-serif; overflow-x:hidden;">
+
+  <!-- ============ NAV ============ -->
+  <div style="position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:14px clamp(20px,5vw,56px); background:rgba(23,19,13,0.94); backdrop-filter:blur(10px); color:#FAF7F2; border-bottom:1px solid rgba(255,255,255,0.08);">
+    <a href="#top" style="font-family:'Archivo',sans-serif; font-weight:900; font-size:19px; letter-spacing:0.02em; text-transform:uppercase; color:#FAF7F2;">Impro<span style="color:#E8871E;">Atelier</span></a>
+    <div style="display:flex; gap:clamp(16px,2.4vw,32px); font-family:'Archivo',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; flex-wrap:wrap;">
+      <a class="nav-link" href="#ueber" style="color:#FAF7F2; transition:color .18s;">Über Uns</a>
+      <a class="nav-link" href="#shows" style="color:#FAF7F2; transition:color .18s;">Shows</a>
+      <a class="nav-link" href="#ensemble" style="color:#FAF7F2; transition:color .18s;">Ensemble</a>
+      <a class="nav-link" href="#kontakt" style="color:#FAF7F2; transition:color .18s;">Kontakt</a>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <div style="padding:clamp(48px,8vw,88px) clamp(24px,6vw,64px) 0;">
+    <div style="font-family:'Space Mono',monospace; font-size:clamp(11px,1.5vw,13px); letter-spacing:0.22em; text-transform:uppercase; color:#C56A0A; margin-bottom:clamp(16px,2.5vw,22px);">Improvisationstheater · Mainz<br></div>
+    <h1 style="font-family:'Archivo',sans-serif; font-weight:900; font-size:clamp(46px,10vw,120px); line-height:0.9; letter-spacing:-0.02em; text-transform:uppercase; margin:0; text-wrap:balance;">Kein Plan.<br><span style="color:#E8871E;">Volle</span> Absicht.</h1>
+    <p style="font-size:clamp(17px,2.2vw,22px); line-height:1.5; color:#3D362D; max-width:660px; margin:clamp(24px,3vw,32px) 0 0; font-weight:500; text-wrap:pretty;">Theater ohne Skript, ohne Netz. Nur der Moment, das Publikum und ziemlich viel Handwerk. Jeden Abend ein Original.</p>
+  </div>
+  <div style="padding:clamp(16px,3vw,28px) clamp(8px,4vw,40px) clamp(40px,6vw,64px);">
+    <img src="assets/logo-hero.webp" alt="Lolo, der malende Esel — das Wahrzeichen des ImproAteliers" width="2400" height="1476" fetchpriority="high" style="width:100%; max-width:1200px; margin:0 auto; mix-blend-mode:multiply;">
+  </div>
+
+  <!-- ============ ÜBER UNS — dark block ============ -->
+  <div id="ueber" style="scroll-margin-top:72px; background:#17130D; color:#EDE6D8; padding:clamp(64px,10vw,112px) clamp(24px,6vw,64px);">
+    <div style="max-width:1160px; margin:0 auto; display:flex; gap:clamp(0px,4vw,56px); align-items:flex-start; flex-wrap:wrap;">
+      <div style="font-family:'Archivo',sans-serif; font-weight:900; font-size:clamp(80px,14vw,160px); line-height:0.8; color:transparent; -webkit-text-stroke:2px #E8871E; letter-spacing:-0.03em;">01</div>
+      <div style="flex:1; min-width:280px;">
+        <div style="font-family:'Space Mono',monospace; font-size:13px; letter-spacing:0.2em; text-transform:uppercase; color:#E8871E; margin-bottom:12px;">Über Uns</div>
+        <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:clamp(38px,6vw,58px); line-height:1; text-transform:uppercase; margin:0 0 clamp(28px,4vw,40px); letter-spacing:-0.01em;">Das ImproAtelier</h2>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:clamp(24px,4vw,52px);">
+          <div style="font-family:'Instrument Serif',Georgia,serif; font-size:clamp(19px,2.4vw,23px); line-height:1.5; color:#D8D0C2;">
+            <p style="margin:0 0 20px;">Es gibt eine Geschichte über einen Esel namens Lolo, der Anfang des 20. Jahrhunderts Gemälde produzierte, indem er seinen Schwanz als Pinsel benutzte. Die Bilder wurden als avantgardistisch gelobt, bevor jemand bemerkte, wer sie gemalt hatte.</p>
+            <p style="margin:0;">Wir denken oft an Lolo.<br></p><p style="margin:0;"><br>Nicht, weil wir uns für Esel halten (oder vielleicht doch ein bisschen), sondern weil diese Geschichte etwas Wesentliches über Improvisation sagt: dass der unwahrscheinlichste Weg manchmal der direkteste ist und dass man bereit sein muss loszulassen, um wirklich anzufangen.</p>
+          </div>
+          <div style="font-size:17px; line-height:1.72; color:#C9C0B2;">
+            <p style="margin:0 0 18px;">Das ImproAtelier ist ein Ensemble, das glaubt, dass die interessantesten Momente auf der Bühne die sind, die niemand geplant hat — und dass es Handwerk braucht, um diesen Momenten zu vertrauen.</p>
+            <p style="margin:0;">Wir nennen das, was wir tun, deshalb Atelier: ein Ort, an dem etwas entsteht, das es vorher nicht gab, und an dem die Spuren des Entstehens sichtbar bleiben dürfen.</p>
+          </div>
+        </div>
+        <p style="font-family:'Archivo',sans-serif; font-weight:800; font-size:clamp(26px,3.6vw,36px); line-height:1.12; text-transform:uppercase; margin:clamp(36px,5vw,52px) 0 0; color:#FAF7F2; max-width:900px;">Was herauskommt, entscheidet das Publikum. <span style="color:#E8871E;">Jeden Abend neu.</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SHOWS — orange block ============ -->
+  <div id="shows" style="scroll-margin-top:72px; background:#E8871E; color:#17130D; padding:clamp(64px,10vw,112px) clamp(24px,6vw,64px);">
+    <div style="max-width:1160px; margin:0 auto;">
+      <div style="font-family:'Space Mono',monospace; font-size:13px; letter-spacing:0.2em; text-transform:uppercase; color:#7A3F00; margin-bottom:12px;">02 — Shows</div>
+      <h2 style="font-family:'Archivo',sans-serif; font-weight:900; font-size:clamp(42px,7vw,68px); line-height:0.95; text-transform:uppercase; margin:0 0 12px; letter-spacing:-0.02em;">Einmal und<br>nie wieder</h2>
+      <p style="font-size:clamp(16px,2vw,19px); max-width:540px; margin:0 0 clamp(32px,5vw,48px); font-weight:500;">Impro gibt's nicht als Wiederholung. Wer dabei war, war dabei.</p>
+      <div style="background:#17130D; color:#FAF7F2; border-radius:6px; padding:clamp(28px,4vw,44px); display:flex; align-items:center; gap:clamp(24px,4vw,44px); flex-wrap:wrap;">
+        <div style="font-family:'Archivo',sans-serif; font-weight:900; font-size:clamp(36px,5vw,46px); line-height:0.9; color:#E8871E; min-width:140px;">19.07<br><span style="font-size:0.5em; color:#C9C0B2;">2026</span></div>
+        <div style="flex:1; min-width:220px;">
+          <div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:clamp(28px,3.6vw,38px); text-transform:uppercase; line-height:1;">Prime Time Crime</div>
+          <div style="font-size:16px; color:#C9C0B2; margin-top:10px;">Improvisierter Krimi in voller Länge · Wiesbaden · So 18:00</div>
+        </div>
+        <a class="ticket-link" href="mailto:dasimproatelier@proton.me?subject=Tickets%20Prime%20Time%20Crime" style="font-family:'Archivo',sans-serif; font-weight:700; font-size:14px; letter-spacing:0.08em; text-transform:uppercase; background:#E8871E; color:#17130D; padding:16px 26px; border-radius:100px; transition:background .18s;">Tickets →</a>
+      </div>
+      <p style="font-size:clamp(15px,1.8vw,16px); margin:clamp(24px,3vw,30px) 0 0; font-weight:600;">Weitere Termine sind in Planung. Schreib uns — wir sagen dir Bescheid.</p>
+    </div>
+  </div>
+
+  <!-- ============ ENSEMBLE ============ -->
+  <div id="ensemble" style="scroll-margin-top:72px; padding:clamp(64px,10vw,112px) clamp(24px,6vw,64px);">
+    <div style="max-width:1160px; margin:0 auto;">
+      <div style="font-family:'Space Mono',monospace; font-size:13px; letter-spacing:0.2em; text-transform:uppercase; color:#C56A0A; margin-bottom:12px;">03 — Ensemble</div>
+      <h2 style="font-family:'Archivo',sans-serif; font-weight:900; font-size:clamp(42px,7vw,68px); line-height:0.95; text-transform:uppercase; margin:0 0 clamp(32px,5vw,48px); letter-spacing:-0.02em;">Wer auf der<br>Bühne steht</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:clamp(16px,2vw,24px);">
+        <div style="background:#F1EADC; border-radius:6px; padding:22px;"><div style="aspect-ratio:1; border-radius:4px; background:repeating-linear-gradient(45deg,#E6DDCD,#E6DDCD 8px,#DBD0BC 8px,#DBD0BC 16px); margin-bottom:18px;"></div><div style="font-family: 'Archivo',sans-serif; font-weight: 800; font-size: 21px; text-transform: uppercase; line-height: 1.05; text-align: center">Dominik Boeschen</div><div style="font-family: 'Space Mono',monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A7F71; margin-top: 6px; text-align: center">Spiel</div></div>
+        <div style="background:#F1EADC; border-radius:6px; padding:22px;"><div style="aspect-ratio:1; border-radius:4px; background:repeating-linear-gradient(45deg,#E6DDCD,#E6DDCD 8px,#DBD0BC 8px,#DBD0BC 16px); margin-bottom:18px;"></div><div style="font-family: 'Archivo',sans-serif; font-weight: 800; font-size: 21px; text-transform: uppercase; line-height: 1.05; text-align: center">Nils <br>Brast</div><div style="font-family: 'Space Mono',monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A7F71; margin-top: 6px; text-align: center">Spiel</div></div>
+        <div style="background:#F1EADC; border-radius:6px; padding:22px;"><div style="aspect-ratio:1; border-radius:4px; background:repeating-linear-gradient(45deg,#E6DDCD,#E6DDCD 8px,#DBD0BC 8px,#DBD0BC 16px); margin-bottom:18px;"></div><div style="font-family: 'Archivo',sans-serif; font-weight: 800; font-size: 21px; text-transform: uppercase; line-height: 1.05; text-align: center">Leo Heckmann</div><div style="font-family: 'Space Mono',monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A7F71; margin-top: 6px; text-align: center">Spiel · Vorstand</div></div>
+        <div style="background:#F1EADC; border-radius:6px; padding:22px;"><div style="aspect-ratio:1; border-radius:4px; background:repeating-linear-gradient(45deg,#E6DDCD,#E6DDCD 8px,#DBD0BC 8px,#DBD0BC 16px); margin-bottom:18px;"></div><div style="font-family: 'Archivo',sans-serif; font-weight: 800; font-size: 21px; text-transform: uppercase; line-height: 1.05; text-align: center">Lisa Jaguschewski</div><div style="font-family: 'Space Mono',monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A7F71; margin-top: 6px; text-align: center">Spiel</div></div>
+        <div style="background:#F1EADC; border-radius:6px; padding:22px;"><div style="aspect-ratio:1; border-radius:4px; background:repeating-linear-gradient(45deg,#E6DDCD,#E6DDCD 8px,#DBD0BC 8px,#DBD0BC 16px); margin-bottom:18px;"></div><div style="font-family: 'Archivo',sans-serif; font-weight: 800; font-size: 21px; text-transform: uppercase; line-height: 1.05; text-align: center">Henrike Jungeblut</div><div style="font-family: 'Space Mono',monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A7F71; margin-top: 6px; text-align: center">Spiel</div></div>
+        <div style="background:#F1EADC; border-radius:6px; padding:22px;"><div style="aspect-ratio:1; border-radius:4px; background:repeating-linear-gradient(45deg,#E6DDCD,#E6DDCD 8px,#DBD0BC 8px,#DBD0BC 16px); margin-bottom:18px;"></div><div style="font-family: 'Archivo',sans-serif; font-weight: 800; font-size: 21px; text-transform: uppercase; line-height: 1.05; text-align: center">Angela Nienierza</div><div style="font-family: 'Space Mono',monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A7F71; margin-top: 6px; text-align: center">Spiel · Vorstand</div></div>
+        <div style="background:#F1EADC; border-radius:6px; padding:22px;"><div style="aspect-ratio:1; border-radius:4px; background:repeating-linear-gradient(45deg,#E6DDCD,#E6DDCD 8px,#DBD0BC 8px,#DBD0BC 16px); margin-bottom:18px;"></div><div style="font-family: 'Archivo',sans-serif; font-weight: 800; font-size: 21px; text-transform: uppercase; line-height: 1.05; text-align: center">Annika Schauf</div><div style="font-family: 'Space Mono',monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A7F71; margin-top: 6px; text-align: center">Spiel</div></div>
+        <div style="background:#F1EADC; border-radius:6px; padding:22px;"><div style="aspect-ratio:1; border-radius:4px; background:repeating-linear-gradient(45deg,#E6DDCD,#E6DDCD 8px,#DBD0BC 8px,#DBD0BC 16px); margin-bottom:18px;"></div><div style="font-family: 'Archivo',sans-serif; font-weight: 800; font-size: 21px; text-transform: uppercase; line-height: 1.05; text-align: center">Anna-Lena Schubert</div><div style="font-family: 'Space Mono',monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A7F71; margin-top: 6px; text-align: center">Spiel</div></div>
+      </div>
+      <p style="font-size:14px; color:#8A7F71; margin:clamp(24px,3vw,30px) 0 0; font-family:'Space Mono',monospace; letter-spacing:0.04em;">Fotos folgen in Kürze.</p>
+    </div>
+  </div>
+
+  <!-- ============ KONTAKT — dark ============ -->
+  <div id="kontakt" style="scroll-margin-top:72px; background:#17130D; color:#FAF7F2; padding:clamp(72px,11vw,120px) clamp(24px,6vw,64px); text-align:center;">
+    <div style="font-family:'Space Mono',monospace; font-size:13px; letter-spacing:0.2em; text-transform:uppercase; color:#E8871E; margin-bottom:16px;">04 — Kontakt</div>
+    <h2 style="font-family:'Archivo',sans-serif; font-weight:900; font-size:clamp(48px,9vw,76px); line-height:0.95; text-transform:uppercase; margin:0 0 24px; letter-spacing:-0.02em;">Sag Hallo</h2>
+    <p style="font-size:clamp(17px,2.2vw,19px); color:#C9C0B2; max-width:520px; margin:0 auto 36px; line-height:1.5;">Auftrittsanfrage, Workshop oder einfach nur „hallo" — eine Antwort improvisieren wir.</p>
+    <a class="contact-link" href="mailto:dasimproatelier@proton.me" style="display:inline-block; font-family:'Archivo',sans-serif; font-weight:800; font-size:clamp(18px,3vw,26px); text-transform:uppercase; background:#E8871E; color:#17130D; padding:20px clamp(28px,5vw,42px); border-radius:100px; transition:transform .18s, background .18s; word-break:break-word;">dasimproatelier@proton.me</a>
+  </div>
+
+  <!-- ============ IMPRESSUM / FOOTER ============ -->
+  <div style="background:#0F0C08; color:#8A7F71; padding:clamp(48px,7vw,64px) clamp(24px,6vw,64px);">
+    <div style="max-width:1160px; margin:0 auto;">
+      <div style="display:flex; justify-content:space-between; gap:40px; flex-wrap:wrap; align-items:flex-start;">
+        <div style="font-family:'Archivo',sans-serif; font-weight:900; font-size:22px; text-transform:uppercase; color:#FAF7F2;">Impro<span style="color:#E8871E;">Atelier</span></div>
+        <div style="font-family:'Space Mono',monospace; font-size:12px; line-height:2; letter-spacing:0.03em; max-width:520px;">
+          <div style="color:#E8871E; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:10px;">Impressum</div>
+          Das ImproAtelier e.V.<br>Kreuzstr. 49, 55120 Mainz<br>Vertretungsberechtigter Vorstand: Leo Heckmann (Vorsitzender), Angela Nienierza (stellv. Vorsitzende)<br>Vereinsregister: Amtsgericht Mainz, VR 42700<br>Kontakt: <a class="footer-link" href="mailto:dasimproatelier@proton.me" style="color:#8A7F71;">dasimproatelier@proton.me</a>
+        </div>
+      </div>
+      <div style="margin-top:40px; padding-top:22px; border-top:1px solid rgba(255,255,255,0.1); font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.08em;">© 2026 Das ImproAtelier e.V. · Alles improvisiert, nichts versprochen.</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
