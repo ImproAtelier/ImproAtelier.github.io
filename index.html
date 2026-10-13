@@ -64,6 +64,32 @@
     .contact-link:hover { background: #FAF7F2 !important; }
     .contact-link:hover { transform: translateY(-2px); }
     .footer-link:hover { color: #E8871E !important; }
+    .about-columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(28px, 4vw, 52px);
+      align-items: start;
+      font-size: 17px;
+      line-height: 1.72;
+    }
+    .about-copy,
+    .about-story { min-width: 0; }
+    .about-story {
+      color: #C9C0B2;
+      border-left: 1px solid rgba(232, 135, 30, 0.55);
+      padding-left: clamp(24px, 3vw, 36px);
+    }
+    .about-columns p { margin: 0 0 18px; }
+    .about-columns p:last-child { margin-bottom: 0; }
+    @media (max-width: 760px) {
+      .about-columns { grid-template-columns: 1fr; }
+      .about-story {
+        border-left: 0;
+        border-top: 1px solid rgba(232, 135, 30, 0.55);
+        padding-left: 0;
+        padding-top: 24px;
+      }
+    }
     a:focus-visible {
       outline: 3px solid #FAF7F2;
       outline-offset: 4px;
@@ -101,23 +127,21 @@
 
   <!-- ============ ÜBER UNS — dark block ============ -->
   <div id="ueber" style="scroll-margin-top:72px; background:#17130D; color:#EDE6D8; padding:clamp(64px,10vw,112px) clamp(24px,6vw,64px);">
-    <div style="max-width:1160px; margin:0 auto; display:flex; gap:clamp(0px,4vw,56px); align-items:flex-start; flex-wrap:wrap;">
-      <div style="font-family:'Archivo',sans-serif; font-weight:900; font-size:clamp(80px,14vw,160px); line-height:0.8; color:transparent; -webkit-text-stroke:2px #E8871E; letter-spacing:-0.03em;">01</div>
-      <div style="flex:1; min-width:280px;">
-        <div style="font-family:'Space Mono',monospace; font-size:13px; letter-spacing:0.2em; text-transform:uppercase; color:#E8871E; margin-bottom:12px;">Über Uns</div>
-        <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:clamp(38px,6vw,58px); line-height:1; text-transform:uppercase; margin:0 0 clamp(28px,4vw,40px); letter-spacing:-0.01em;">Das ImproAtelier</h2>
-        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:clamp(24px,4vw,52px);">
-          <div style="font-family:'Instrument Serif',Georgia,serif; font-size:clamp(19px,2.4vw,23px); line-height:1.5; color:#D8D0C2;">
-            <p style="margin:0 0 20px;">Es gibt eine Geschichte über einen Esel namens Lolo, der Anfang des 20. Jahrhunderts Gemälde produzierte, indem er seinen Schwanz als Pinsel benutzte. Die Bilder wurden als avantgardistisch gelobt, bevor jemand bemerkte, wer sie gemalt hatte.</p>
-            <p style="margin:0;">Wir denken oft an Lolo.<br></p><p style="margin:0;"><br>Nicht, weil wir uns für Esel halten (oder vielleicht doch ein bisschen), sondern weil diese Geschichte etwas Wesentliches über Improvisation sagt: dass der unwahrscheinlichste Weg manchmal der direkteste ist und dass man bereit sein muss loszulassen, um wirklich anzufangen.</p>
-          </div>
-          <div style="font-size:17px; line-height:1.72; color:#C9C0B2;">
-            <p style="margin:0 0 18px;">Das ImproAtelier ist ein Ensemble, das glaubt, dass die interessantesten Momente auf der Bühne die sind, die niemand geplant hat — und dass es Handwerk braucht, um diesen Momenten zu vertrauen.</p>
-            <p style="margin:0;">Wir nennen das, was wir tun, deshalb Atelier: ein Ort, an dem etwas entsteht, das es vorher nicht gab, und an dem die Spuren des Entstehens sichtbar bleiben dürfen.</p>
-          </div>
+    <div style="max-width:1160px; margin:0 auto;">
+      <div style="font-family:'Space Mono',monospace; font-size:13px; letter-spacing:0.2em; text-transform:uppercase; color:#E8871E; margin-bottom:12px;">01 — Über uns</div>
+      <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:clamp(38px,6vw,58px); line-height:1; text-transform:uppercase; margin:0 0 clamp(28px,4vw,40px); letter-spacing:-0.01em;">Das ImproAtelier</h2>
+      <div class="about-columns">
+        <div class="about-copy">
+          <p>Das ImproAtelier ist ein Ensemble, das glaubt, dass die interessantesten Momente auf der Bühne die sind, die niemand geplant hat — und dass es Handwerk braucht, um diesen Momenten zu vertrauen.</p>
+          <p>Wir nennen das, was wir tun, deshalb Atelier: ein Ort, an dem etwas entsteht, das es vorher nicht gab, und an dem die Spuren des Entstehens sichtbar bleiben dürfen.</p>
         </div>
-        <p style="font-family:'Archivo',sans-serif; font-weight:800; font-size:clamp(26px,3.6vw,36px); line-height:1.12; text-transform:uppercase; margin:clamp(36px,5vw,52px) 0 0; color:#FAF7F2; max-width:900px;">Was herauskommt, entscheidet das Publikum. <span style="color:#E8871E;">Jeden Abend neu.</span></p>
+        <aside class="about-story" aria-label="Die Geschichte von Lolo">
+          <p>Es gibt eine Geschichte über einen Esel namens Lolo, der Anfang des 20. Jahrhunderts Gemälde produzierte, indem er seinen Schwanz als Pinsel benutzte. Die Bilder wurden als avantgardistisch gelobt, bevor jemand bemerkte, wer sie gemalt hatte.</p>
+          <p>Wir denken oft an Lolo.</p>
+          <p>Nicht, weil wir uns für Esel halten (oder vielleicht doch ein bisschen), sondern weil diese Geschichte etwas Wesentliches über Improvisation sagt: dass der unwahrscheinlichste Weg manchmal der direkteste ist und dass man bereit sein muss loszulassen, um wirklich anzufangen.</p>
+        </aside>
       </div>
+      <p style="font-family:'Archivo',sans-serif; font-weight:800; font-size:clamp(26px,3.6vw,36px); line-height:1.12; text-transform:uppercase; margin:clamp(36px,5vw,52px) 0 0; color:#FAF7F2; max-width:900px;">Was herauskommt, entscheidet das Publikum. <span style="color:#E8871E;">Jeden Abend neu.</span></p>
     </div>
   </div>
 
