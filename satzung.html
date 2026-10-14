@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Satzung des Das ImproAtelier e.V. – Mainz">
+  <meta name="robots" content="noindex, follow">
   <title>Satzung – Das ImproAtelier e.V.</title>
   <style>
     @font-face {
@@ -30,9 +31,10 @@
     .footer-link:hover { color: #E8871E !important; }
 
     /* Spezifische Styles für die Satzung */
-    .statutes-content h1 { font-family: 'Archivo', sans-serif; font-weight: 900; font-size: clamp(32px, 5vw, 48px); text-transform: uppercase; letter-spacing: -0.02em; margin: 0 0 16px; color: #17130D; }
+    /* Hinzugefügt: hyphens: auto; word-break: break-word; */
+    .statutes-content h1 { font-family: 'Archivo', sans-serif; font-weight: 900; font-size: clamp(32px, 5vw, 48px); text-transform: uppercase; letter-spacing: -0.02em; margin: 0 0 16px; color: #17130D; word-break: break-word; hyphens: auto; -webkit-hyphens: auto; -moz-hyphens: auto; }
     .statutes-content .status-date { font-family: 'Space Mono', monospace; font-size: 14px; color: #8A7F71; margin-bottom: 48px; display: block; }
-    .statutes-content h2 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 24px; text-transform: uppercase; margin: 48px 0 24px; color: #17130D; border-bottom: 2px solid #E8871E; padding-bottom: 8px; display: inline-block;}
+    .statutes-content h2 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 24px; text-transform: uppercase; margin: 48px 0 24px; color: #17130D; border-bottom: 2px solid #E8871E; padding-bottom: 8px; display: inline-block; word-break: break-word; hyphens: auto; -webkit-hyphens: auto; -moz-hyphens: auto; }
     .statutes-content h3 { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 18px; margin: 32px 0 12px; color: #17130D; }
     
     .statutes-list { list-style-type: none; padding-left: 0; counter-reset: item; }
@@ -75,7 +77,7 @@
     <div style="max-width:800px; margin:0 auto;">
       
       <div style="font-family:'Space Mono',monospace; font-size:13px; letter-spacing:0.2em; text-transform:uppercase; color:#C56A0A; margin-bottom:12px;">Vereinsdokumente</div>
-      <h1>Vereinssatzung Das ImproAtelier e.V.</h1>
+      <h1>Vereinssatzung<br>Das ImproAtelier e.V.</h1>
       <span class="status-date">Stand: 20.01.2026</span>
 
       <h2>§ 1 Name, Sitz und Geschäftsjahr</h2>
@@ -236,19 +238,19 @@
     </div>
   </div>
 
-<!-- ============ IMPRESSUM / FOOTER ============ -->
+  <!-- ============ IMPRESSUM / FOOTER ============ -->
   <div style="background:#0F0C08; color:#8A7F71; padding:clamp(48px,7vw,64px) clamp(24px,6vw,64px);">
     <div style="max-width:1160px; margin:0 auto;">
       <div style="display:flex; justify-content:space-between; gap:40px; flex-wrap:wrap; align-items:flex-start;">
         <div style="font-family:'Archivo',sans-serif; font-weight:900; font-size:22px; text-transform:uppercase; color:#FAF7F2;">Impro<span style="color:#E8871E;">Atelier</span></div>
         <div style="font-family:'Space Mono',monospace; font-size:12px; line-height:2; letter-spacing:0.03em; max-width:520px;">
           <div style="color:#E8871E; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:10px;">
-            Impressum & Datenschutz</a>
+            Impressum & Rechtliches
           </div>
           Das ImproAtelier e.V.<br>
           Kreuzstr. 49, 55120 Mainz<br>
           Vertretungsberechtigter Vorstand: Leo Heckmann (Vorsitzender), Angela Nienierza (stellv. Vorsitzende)<br>
-          Vereinsregister: Amtsgericht Mainz, VR 42700 (<a href="satzung.html" class="footer-link" style="color:#8A7F71; text-decoration:underline;">Vereinssatzung</a>)<br>
+          Vereinsregister: Amtsgericht Mainz, VR 42700 (<a href="satzung.html" class="footer-link" style="color:#8A7F71; text-decoration:underline;">Satzung ansehen</a>)<br>
           Kontakt: <a class="footer-link" href="mailto:hallo@dasimproatelier.de" style="color:#8A7F71; text-decoration:underline;">hallo@dasimproatelier.de</a><br>
           Datenschutz: <a class="footer-link" href="datenschutz.html" style="color:#8A7F71; text-decoration:underline;">Datenschutzerklärung</a>
         </div>
