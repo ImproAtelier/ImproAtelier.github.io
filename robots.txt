@@ -1,2 +1,3 @@
 User-agent: *
-Allow: /
+Disallow: /datenschutz.html
+Disallow: /satzung.html
