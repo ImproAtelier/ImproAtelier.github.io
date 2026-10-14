@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Satzung des Das ImproAtelier e.V. – Mainz">
+  <title>Satzung – Das ImproAtelier e.V.</title>
+  <style>
+    @font-face {
+      font-family: "Archivo";
+      src: url("assets/fonts/archivo-latin-wght-normal.woff2") format("woff2-variations");
+      font-style: normal; font-weight: 100 900; font-display: swap;
+    }
+    @font-face {
+      font-family: "Space Grotesk";
+      src: url("assets/fonts/space-grotesk-latin-wght-normal.woff2") format("woff2-variations");
+      font-style: normal; font-weight: 300 700; font-display: swap;
+    }
+    @font-face {
+      font-family: "Space Mono";
+      src: url("assets/fonts/space-mono-latin-400-normal.woff2") format("woff2");
+      font-style: normal; font-weight: 400; font-display: swap;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #FAF7F2; color: #17130D; font-family: 'Space Grotesk', system-ui, sans-serif; line-height: 1.6; }
+    a { color: #C56A0A; text-decoration: none; }
+    a:hover { color: #E8871E; }
+    .nav-link:hover { color: #E8871E !important; }
+    .footer-link:hover { color: #E8871E !important; }
+
+    /* Spezifische Styles für die Satzung */
+    .statutes-content h1 { font-family: 'Archivo', sans-serif; font-weight: 900; font-size: clamp(32px, 5vw, 48px); text-transform: uppercase; letter-spacing: -0.02em; margin: 0 0 16px; color: #17130D; }
+    .statutes-content .status-date { font-family: 'Space Mono', monospace; font-size: 14px; color: #8A7F71; margin-bottom: 48px; display: block; }
+    .statutes-content h2 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 24px; text-transform: uppercase; margin: 48px 0 24px; color: #17130D; border-bottom: 2px solid #E8871E; padding-bottom: 8px; display: inline-block;}
+    .statutes-content h3 { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 18px; margin: 32px 0 12px; color: #17130D; }
+    
+    .statutes-list { list-style-type: none; padding-left: 0; counter-reset: item; }
+    .statutes-list > li { position: relative; padding-left: 32px; margin-bottom: 16px; font-size: 17px; color: #3D362D; }
+    .statutes-list > li::before { content: counter(item) ". "; counter-increment: item; position: absolute; left: 0; top: 0; font-weight: 700; color: #C56A0A; font-family: 'Space Mono', monospace; }
+    
+    .statutes-sublist { list-style-type: none; padding-left: 0; counter-reset: subitem; margin-top: 12px; }
+    .statutes-sublist > li { position: relative; padding-left: 32px; margin-bottom: 12px; font-size: 16px; }
+    .statutes-sublist > li::before { content: counter(subitem) ". "; counter-increment: subitem; position: absolute; left: 0; top: 0; font-weight: 700; color: #8A7F71; font-family: 'Space Mono', monospace; }
+    
+    /* Ausnahme für verschachtelte Listen, falls nötig */
+    .statutes-sublist .statutes-sublist > li::before { content: counter(subitem, lower-alpha) ") "; }
+
+    .signatures { margin-top: 64px; padding-top: 32px; border-top: 1px solid rgba(23, 19, 13, 0.1); }
+    .signatures p { font-size: 16px; color: #3D362D; margin-bottom: 8px; }
+    .signatures .names { column-count: 2; column-gap: 40px; margin-top: 24px; font-family: 'Space Mono', monospace; font-size: 14px; }
+    @media (max-width: 600px) { .signatures .names { column-count: 1; } }
+    .signatures .name-item { margin-bottom: 12px; padding-bottom: 4px; border-bottom: 1px dashed rgba(23, 19, 13, 0.1); }
+  </style>
+</head>
+<body>
+
+<div id="top" style="background:#FAF7F2; color:#17130D; font-family:'Space Grotesk',system-ui,sans-serif; overflow-x:clip; min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- ============ NAV ============ -->
+  <div style="position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:14px clamp(16px,4vw,56px); background:rgba(23,19,13,0.94); backdrop-filter:blur(10px); color:#FAF7F2; border-bottom:1px solid rgba(255,255,255,0.08);">
+    <a href="index.html#top" style="font-family:'Archivo',sans-serif; font-weight:900; font-size:19px; letter-spacing:0.02em; text-transform:uppercase; color:#FAF7F2;">Impro<span style="color:#E8871E;">Atelier</span></a>
+    
+    <div style="display:flex; justify-content:center; gap:clamp(10px,2vw,32px); font-family:'Archivo',sans-serif; font-weight:700; font-size:clamp(11px,2.5vw,13px); letter-spacing:0.05em; text-transform:uppercase; flex-wrap:nowrap; overflow-x:auto;">
+      <a class="nav-link" href="index.html#ueber" style="color:#FAF7F2; transition:color .18s; white-space:nowrap;">Über Uns</a>
+      <a class="nav-link" href="index.html#shows" style="color:#FAF7F2; transition:color .18s; white-space:nowrap;">Shows</a>
+      <a class="nav-link" href="index.html#ensemble" style="color:#FAF7F2; transition:color .18s; white-space:nowrap;">Ensemble</a>
+      <a class="nav-link" href="index.html#kontakt" style="color:#FAF7F2; transition:color .18s; white-space:nowrap;">Kontakt</a>
+      <a class="nav-link" href="index.html#spenden" style="color:#FAF7F2; transition:color .18s; white-space:nowrap;">Spenden</a>
+    </div>
+  </div>
+
+  <!-- ============ SATZUNG CONTENT ============ -->
+  <div class="statutes-content" style="flex: 1; padding:clamp(48px,8vw,88px) clamp(24px,6vw,64px);">
+    <div style="max-width:800px; margin:0 auto;">
+      
+      <div style="font-family:'Space Mono',monospace; font-size:13px; letter-spacing:0.2em; text-transform:uppercase; color:#C56A0A; margin-bottom:12px;">Vereinsdokumente</div>
+      <h1>Satzung</h1>
+      <span class="status-date">Stand: 20.01.2026</span>
+
+      <h2>§ 1 Name, Sitz und Geschäftsjahr</h2>
+      <ol class="statutes-list">
+        <li>Der Verein führt den Namen Das ImproAtelier.</li>
+        <li>Er soll in das Vereinsregister eingetragen werden und führt danach den Zusatz „e.V.".</li>
+        <li>Der Verein hat seinen Sitz in Mainz.</li>
+        <li>Das Geschäftsjahr ist das Kalenderjahr.</li>
+      </ol>
+
+      <h2>§ 2 Zweck und Gemeinnützigkeit</h2>
+      <ol class="statutes-list">
+        <li>Der Verein verfolgt ausschließlich und unmittelbar gemeinnützige Zwecke im Sinne des Abschnitts „Steuerbegünstigte Zwecke" der Abgabenordnung (AO).
+          <ol class="statutes-sublist">
+            <li>Der Verein ist selbstlos tätig; er verfolgt nicht in erster Linie eigenwirtschaftliche Zwecke.</li>
+            <li>Mittel des Vereins dürfen nur für die satzungsmäßigen Zwecke verwendet werden. Die Mitglieder erhalten keine Zuwendungen aus Mitteln des Vereins.</li>
+            <li>Es darf keine Person durch Ausgaben, die dem Zweck des Vereins fremd sind, oder durch unverhältnismäßig hohe Vergütungen begünstigt werden.</li>
+            <li>Ausscheidende Mitglieder haben gegen den Verein keinen Anspruch am Vereinsvermögen.</li>
+          </ol>
+        </li>
+        <li>Zweck des Vereins ist die Förderung von Kunst und Kultur im Sinne des § 52 Abs. 2 Nr. 5 AO, insbesondere im Bereich des Improvisationstheaters.</li>
+        <li>Der Vereinszweck wird erreicht durch:
+          <ol class="statutes-sublist">
+            <li>das Abhalten von regelmäßigen Proben zur Vermittlung und Förderung der Improvisationskunst.</li>
+            <li>Die Schaffung einer Plattform für den künstlerischen Austausch von Laien und Künstlern im Bereich des Theaters und der darstellenden Künste.</li>
+            <li>Die Durchführung von öffentlichen Aufführungen und Vorstellungen von Improvisationstheater.</li>
+            <li>Die Teilnahme an improvisationstheaterspezifischen und übergreifenden Veranstaltungen anderer kulturellen Einrichtungen.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h2>§ 3 Ziele und Aufgaben</h2>
+      <ol class="statutes-list">
+        <li>Der Verein ist konfessionell und parteipolitisch neutral.</li>
+        <li>Der Verein will seinen Mitgliedern die Ausübung sachgerechten Improvisationstheaters ermöglichen.</li>
+        <li>Der Verein ist offen für alle Menschen, gibt ihnen die gleichen Rechte und wendet sich damit gegen antidemokratische und nationalistische Tendenzen. Er wirkt allen auftretenden Diskriminierungen und Benachteiligungen von Menschen, insbesondere wegen ihrer Nationalität, ethnischen Zugehörigkeit, Religion, Geschlecht, sexueller Orientierung oder Identität, Zugehörigkeit zu einer bestimmten sozialen Gruppe oder Behinderung entgegen. Er verurteilt jegliche Form von Gewalt, unabhängig davon, ob sie körperlicher, seelischer oder sexueller Art ist.</li>
+      </ol>
+
+      <h2>§ 4 Erwerb der Mitgliedschaft</h2>
+      <ol class="statutes-list">
+        <li>Die Mitgliedschaft ist schriftlich zu beantragen. Der vertretungsberechtigte Vorstand entscheidet über die Aufnahme (vgl. § 10 Abs. 2).</li>
+        <li>Über den schriftlichen Antrag auf Aufnahme entscheidet der Vorstand, die Aufnahme kann ohne Angabe von Gründen abgelehnt werden.</li>
+        <li>Mitglied des Vereins kann jede natürliche und juristische Person werden, die die Ziele des Vereins unterstützt, bei beschränkt Geschäftsfähigen, insbesondere bei Minderjährigen, ist die Zustimmung des gesetzlichen Vertreters erforderlich.</li>
+        <li>Mitglieder, die dem Verein 50 Jahre ununterbrochen angehören, werden Ehrenmitglied. Der Vorstand kann auch Personen zum Ehrenmitglied ernennen, die sich um den Verein besonders verdient gemacht haben.</li>
+        <li>Der Verein besteht aus:
+          <ol class="statutes-sublist">
+            <li>aktiven Mitgliedern,</li>
+            <li>Ehrenmitgliedern</li>
+          </ol>
+        </li>
+        <li>Jedes Mitglied kann das Ruhen seiner Mitgliedschaft schriftlich beantragen. Dies kann insbesondere erfolgen bei längeren Abwesenheiten (z.B. beruflicher Art oder aus krankheitsbedingten Gründen). Einzelheiten regelt die untergeordnete Geschäftsordnung. Während des Ruhens der Mitgliedschaft sind die Mitgliedschaftsrechte und -pflichten des Mitglieds ausgesetzt.</li>
+      </ol>
+
+      <h2>§ 5 Beendigung der Mitgliedschaft</h2>
+      <ol class="statutes-list">
+        <li>Die Mitgliedschaft erlischt durch Austritt, Tod oder Ausschluss aus dem Verein. Die Austrittserklärung ist schriftlich an den Verein zu richten.</li>
+        <li>Der Austritt ist nur zum Schluss eines Quartals unter Einhaltung einer Kündigungsfrist von vier Wochen zulässig. Er wird jedoch erst wirksam, wenn alle Verpflichtungen dem Verein gegenüber erfüllt sind.</li>
+        <li>Ein Mitglied kann, nach vorheriger Anhörung, vom Vorstand aus dem Verein ausgeschlossen werden:
+          <ol class="statutes-sublist">
+            <li>wegen erheblicher Nichterfüllung satzungsgemäßer Verpflichtungen oder grober Missachtung von Anordnungen von Organen des Vereins;</li>
+            <li>wegen Nichtzahlung von Beiträgen trotz zweimaliger schriftlicher Mahnung. Die Ansprüche verfallen danach nicht. Der Verein behält sich rechtliche Schritte vor;</li>
+            <li>wegen eines schweren Verstoßes gegen die Interessen des Vereins, groben vereinsschädigenden Verhaltens;</li>
+            <li>wer dem Verein oder dem Ansehen des Vereins durch unehrenhaftes Verhalten, insbesondere durch Äußerung extremistischer oder verfassungsfeindlicher Gesinnung bzw. Haltung innerhalb und außerhalb des Vereins oder durch die Mitgliedschaft in einer extremistischen Partei, Organisation oder Vereinigung schadet;</li>
+            <li>wer gegen die Grundsätze des Kinder- und Jugendschutzes verstößt.</li>
+          </ol>
+          Über den Ausschluss entscheidet der Vorstand. Der Bescheid über den Ausschluss ist schriftlich zuzustellen.
+        </li>
+      </ol>
+
+      <h2>§ 6 Mitgliedsbeiträge</h2>
+      <ol class="statutes-list">
+        <li>Der monatliche Mitgliedsbeitrag und die Aufnahmegebühr werden von der Mitgliederversammlung festgelegt.</li>
+        <li>Ehrenmitglieder sind beitragsfrei.</li>
+        <li>Grundsätzlich werden die Beiträge, Sonderbeiträge, Arbeitsstunden u.ä. per Lastschrift frühestens am Fälligkeitstag eingezogen.</li>
+      </ol>
+
+      <h2>§ 7 Stimmrecht und Wählbarkeit</h2>
+      <ol class="statutes-list">
+        <li>Stimmberechtigt sind alle Mitglieder nach Vollendung des 16. Lebensjahres. Jüngere Mitglieder können an der Mitgliederversammlung und den Abteilungsversammlungen als Gäste teilnehmen.</li>
+        <li>Gewählt werden können alle Mitglieder, die das 18. Lebensjahr vollendet haben.</li>
+      </ol>
+
+      <h2>§ 8 Organe des Vereins</h2>
+      <ol class="statutes-list">
+        <li>Organe des Vereins sind:
+          <ol class="statutes-sublist">
+            <li>Die Mitgliederversammlung,</li>
+            <li>Der Vorstand</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h2>§ 9 Mitgliederversammlung</h2>
+      <ol class="statutes-list">
+        <li>Die Mitgliederversammlung ist das höchste Organ des Vereins.
+          <ol class="statutes-sublist">
+            <li>Die ordentliche Mitgliederversammlung findet jährlich statt.</li>
+            <li>Die Einladung erfolgt durch Veröffentlichung mit Bekanntgabe der Tagesordnung an die letzte dem Verein gemeldete E-Mail-Adresse. Zwischen dem Tag der Einladung und dem Termin der Versammlung muss eine Frist von mindestens drei Wochen liegen.</li>
+            <li>Eine außerordentliche Mitgliederversammlung kann jederzeit unter Angabe der Gründe und Tagesordnung auf Beschluss des Vorstandes einberufen werden. Sie muss innerhalb von zwei Wochen nach Stellung des Antrages einberufen werden, wenn sie mindestens ein Viertel der stimmfähigen Mitglieder unter Angabe der Gründe beantragt. Der Tagungstermin darf nicht später als sechs Wochen nach der Einladung liegen.</li>
+          </ol>
+        </li>
+        <li>Die Tagesordnung der Mitgliederversammlung muss enthalten:
+          <ol class="statutes-sublist">
+            <li>Bericht des Vorstandes,</li>
+            <li>Bericht des Kassierers,</li>
+            <li>Wahl des Vorstandes,</li>
+            <li>Anträge.</li>
+          </ol>
+        </li>
+        <li>Anträge für die Mitgliederversammlung müssen spätestens acht Tage vorher schriftlich beim Vorstand eingereicht werden. Dringlichkeitsanträge können während der Mitgliederversammlung zugelassen werden, wenn sie von einer Zweidrittelmehrheit unterstützt werden.</li>
+        <li>Beschlussfassung und Abstimmung:
+          <ol class="statutes-sublist">
+            <li>Die Mitgliederversammlung ist beschlussfähig, ohne Rücksicht auf die Zahl der erschienenen Mitglieder.</li>
+            <li>Die Beschlüsse der Mitgliederversammlung werden mit einfacher Mehrheit der abgegebenen, gültigen Stimmen gefasst. Stimmengleichheit gilt als Ablehnung.</li>
+            <li>Wahlen können schriftlich oder durch offene Abstimmung erfolgen. Über die Art der Abstimmung entscheidet die Mitgliederversammlung mit einfacher Mehrheit der abgegebenen Stimmen.</li>
+            <li>Bei Beschlüssen über Satzungsänderungen ist eine Mehrheit von Dreiviertel der stimmberechtigen Anwesenden erforderlich.</li>
+            <li>Ein Kandidat ist gewählt, wenn er die einfache Mehrheit der abgegebenen, gültigen Stimmen erhalten hat.</li>
+            <li>Bei Stimmengleichheit findet eine Stichwahl statt.</li>
+            <li>Über jede Mitgliederversammlung ist ein Protokoll aufzunehmen, das den wesentlichen Verlauf und die Beschlüsse der Mitgliederversammlung enthalten muss. Das Protokoll ist von einem Vorsitzenden und dem Protokollführer zu unterschreiben.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h2>§ 10 Der Vorstand</h2>
+      <ol class="statutes-list">
+        <li>Der Vorstand besteht aus:
+          <ol class="statutes-sublist">
+            <li>zwei gleichberechtigten Vorsitzenden,</li>
+            <li>dem/der Schriftführer*in,</li>
+            <li>dem/der Kassierer*in,</li>
+          </ol>
+        </li>
+        <li>Der vertretungsberechtigte Vorstand besteht aus den zwei gleichberechtigten Vorsitzenden, die jeweils einzeln den Verein gerichtlich und außergerichtlich vertreten (Vorstand im Sinne des § 26 BGB).</li>
+        <li>Die Mitglieder des Vorstandes werden von der Mitgliederversammlung für die Dauer von drei Jahren gewählt. Sie bleiben bis zur Neuwahl des Vorstandes im Amt. Ausscheidende Vorstandsmitglieder sind wieder wählbar.</li>
+        <li>Die vertretungsberechtigten Vorsitzenden sind für die Führung der Geschäfte nach den Beschlüssen der Mitgliederversammlung und des Vorstandes verantwortlich. Sie berufen die Vorstandsitzungen ein und stellen die Tagesordnung auf.</li>
+      </ol>
+
+      <h2>§ 11 Auflösung des Vereins</h2>
+      <ol class="statutes-list">
+        <li>Die Auflösung des Vereins kann nur in einer außerordentlichen Mitgliederversammlung beschlossen werden. Auf der Tagesordnung dieser Versammlung darf nur der Punkt "Auflösung des Vereins" stehen.</li>
+        <li>Die Einberufung einer solchen Mitgliederversammlung darf nur erfolgen, wenn es:
+          <ol class="statutes-sublist">
+            <li>der Vorstand mit einer Mehrheit von Dreiviertel aller seiner Mitglieder beschlossen hat, oder</li>
+            <li>von Zweidrittel der stimmberechtigten Mitglieder des Vereins schriftlich gefordert wurde.</li>
+          </ol>
+        </li>
+        <li>Die Auflösung kann nur mit einer Mehrheit von Dreiviertel der anwesenden stimmberechtigten Mitglieder beschlossen werden. Die Abstimmung ist namentlich vorzunehmen.</li>
+        <li>Bei Auflösung des Vereins oder bei Wegfall seines bisherigen Zwecks fällt sein Vermögen an die Stadt Mainz mit der Zweckbestimmung, dass dieses Vermögen unmittelbar und ausschließlich zur Förderung der Kunst und Kultur verwendet werden muss.</li>
+      </ol>
+
+      <h2>§ 12 Schlussbestimmung</h2>
+      <ol class="statutes-list">
+        <li>Diese Satzung tritt durch Beschluss der Gründungsversammlung vom 20. Januar 2026 in Kraft.</li>
+      </ol>
+
+      <div class="signatures">
+        <p><strong>Mainz, den 20.01.2026</strong></p>
+        <p>Unterschrift der Gründungsmitglieder:</p>
+        <div class="names">
+          <div class="name-item">Dominik Boeschen</div>
+          <div class="name-item">Nils Brast</div>
+          <div class="name-item">Leo Heckmann</div>
+          <div class="name-item">Lisa Jaguschewski</div>
+          <div class="name-item">Henrike Jungeblut</div>
+          <div class="name-item">Angela Nienierza</div>
+          <div class="name-item">Prof. Dr. Anna-Lena Schubert</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ IMPRESSUM / FOOTER ============ -->
+  <div style="background:#0F0C08; color:#8A7F71; padding:clamp(48px,7vw,64px) clamp(24px,6vw,64px);">
+    <div style="max-width:1160px; margin:0 auto;">
+      <div style="display:flex; justify-content:space-between; gap:40px; flex-wrap:wrap; align-items:flex-start;">
+        <div style="font-family:'Archivo',sans-serif; font-weight:900; font-size:22px; text-transform:uppercase; color:#FAF7F2;">Impro<span style="color:#E8871E;">Atelier</span></div>
+        <div style="font-family:'Space Mono',monospace; font-size:12px; line-height:2; letter-spacing:0.03em; max-width:520px;">
+          <div style="color:#E8871E; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:10px;">
+            Impressum & <a href="datenschutz.html" class="footer-link" style="color:#E8871E;">Datenschutz</a>
+          </div>
+          Das ImproAtelier e.V.<br>Kreuzstr. 49, 55120 Mainz<br>Vertretungsberechtigter Vorstand: Leo Heckmann (Vorsitzender), Angela Nienierza (stellv. Vorsitzende)<br>Vereinsregister: Amtsgericht Mainz, VR 42700<br>Kontakt: <a class="footer-link" href="mailto:dasimproatelier@proton.me" style="color:#8A7F71;">dasimproatelier@proton.me</a>
+        </div>
+      </div>
+      <div style="margin-top:40px; padding-top:22px; border-top:1px solid rgba(255,255,255,0.1); font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.08em;">© 2026 Das ImproAtelier e.V. · Alles improvisiert, nichts versprochen.</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
